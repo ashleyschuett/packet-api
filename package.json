@@ -1,0 +1,28 @@
+{
+  "name": "packet-api",
+  "version": "0.0.0",
+  "description": "A packet.net API client implemented in nodejs",
+  "main": "application.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/containership/packet-api.git"
+  },
+  "keywords": [
+    "packet",
+    "packet.net",
+    "api"
+  ],
+  "author": "ContainerShip Developers <developers@containership.io>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/containership/packet-api/issues"
+  },
+  "homepage": "https://github.com/containership/packet-api",
+  "dependencies": {
+    "lodash": "^3.8.0",
+    "request": "^2.55.0"
+  }
+}
