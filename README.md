@@ -20,7 +20,7 @@ var packet = new PacketAPI({
 ### Devices
 
 #### Get Devices
-[Get Devices Documentation](https://www.packet.net/dev/api/#devices-devices-get)
+[Get Devices Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-projects-get)
 ```javascript
 packet.get_devices("project_id", function(err, response){
     if(err)
@@ -31,7 +31,7 @@ packet.get_devices("project_id", function(err, response){
 ```
 
 #### Create Device
-[Create Device Documentation](https://www.packet.net/dev/api/#devices-devices-post)
+[Create Device Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-projects-post)
 ```javascript
 packet.create_device("project_id", {
     "hostname": "my-first-device",
@@ -49,7 +49,7 @@ packet.create_device("project_id", {
 ```
 
 #### Get Device
-[Get Device Documentation](https://www.packet.net/dev/api/#devices-device-get)
+[Get Device Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-project-get)
 ```javascript
 packet.get_device("device_id", function(err, response){
     if(err)
@@ -60,7 +60,7 @@ packet.get_device("device_id", function(err, response){
 ```
 
 #### Update Device
-[Update Device Documentation](https://www.packet.net/dev/api/#devices-device-patch)
+[Update Device Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-project-patch)
 ```javascript
 packet.update_device("device_id", {
     "hostname": "my-updated-first-device"
@@ -73,7 +73,7 @@ packet.update_device("device_id", {
 ```
 
 #### Delete Device
-[Delete Device Documentation](https://www.packet.net/dev/api/#devices-device-delete)
+[Delete Device Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-device-delete)
 ```javascript
 packet.delete_device("device_id", function(err, response){
     if(err)
@@ -83,8 +83,19 @@ packet.delete_device("device_id", function(err, response){
 });
 ```
 
+#### Get Plans
+[Get Plans Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-plans)
+```javascript
+packet.get_plans(function(err, response){
+    if(err)
+        throw err;
+
+    console.log(response);
+});
+```
+
 #### Get Facilities
-[Get Facilities Documentation](https://www.packet.net/dev/api/#devices-locations)
+[Get Facilities Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-locations)
 ```javascript
 packet.get_facilities(function(err, response){
     if(err)
@@ -95,7 +106,7 @@ packet.get_facilities(function(err, response){
 ```
 
 #### Get Operating Systems
-[Get Operating Systems Documentation](https://www.packet.net/dev/api/#devices-operating-systems)
+[Get Operating Systems Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-operating-systems)
 ```javascript
 packet.get_operating_systems(function(err, response){
     if(err)
@@ -108,7 +119,7 @@ packet.get_operating_systems(function(err, response){
 ### Projects
 
 #### Get Projects
-[Get Projects Documentation](https://www.packet.net/dev/api/#projects-projects-get)
+[Get Projects Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-projects-get)
 ```javascript
 packet.get_projects(function(err, response){
     if(err)
@@ -118,8 +129,8 @@ packet.get_projects(function(err, response){
 });
 ```
 
-#### Craete Project
-[Create Project Documentation](https://www.packet.net/dev/api/#projects-projects-post)
+#### Create Project
+[Create Project Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-projects-post)
 ```javascript
 packet.create_project({
     name: "My First Project",
@@ -133,7 +144,7 @@ packet.create_project({
 ```
 
 #### Get Project
-[Get Project Documentation](https://www.packet.net/dev/api/#projects-project-get)
+[Get Project Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-project-get)
 ```javascript
 packet.get_project("project_id", function(err, response){
     if(err)
@@ -144,7 +155,7 @@ packet.get_project("project_id", function(err, response){
 ```
 
 #### Update Project
-[Update Project Documentation](https://www.packet.net/dev/api/#projects-project-patch)
+[Update Project Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-project-patch)
 ```javascript
 packet.update_project("project_id", {
     name: "My Updated First Project"
@@ -157,7 +168,7 @@ packet.update_project("project_id", {
 ```
 
 #### Delete Project
-[Delete Project Documentation](https://www.packet.net/dev/api/#projects-project-delete)
+[Delete Project Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-project-delete)
 ```javascript
 packet.delete_project("project_id", function(err, response){
     if(err)
@@ -170,7 +181,7 @@ packet.delete_project("project_id", function(err, response){
 ### SSH Keys
 
 #### Get SSH Keys
-[Get SSH Keys Documentation](https://www.packet.net/dev/api/#ssh-keys)
+[Get SSH Keys Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-ssh-keys-get)
 ```javascript
 packet.get_ssh_keys(function(err, response){
     if(err)
