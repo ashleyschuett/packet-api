@@ -20,7 +20,7 @@ var packet = new PacketAPI({
 ### Devices
 
 #### Get Devices
-[Get Devices Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-projects-get)
+[Get Devices Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-devices-get)
 ```javascript
 packet.get_devices("project_id", function(err, response){
     if(err)
@@ -31,7 +31,7 @@ packet.get_devices("project_id", function(err, response){
 ```
 
 #### Create Device
-[Create Device Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-projects-post)
+[Create Device Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-devices-post)
 ```javascript
 packet.create_device("project_id", {
     "hostname": "my-first-device",
@@ -49,7 +49,7 @@ packet.create_device("project_id", {
 ```
 
 #### Get Device
-[Get Device Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-project-get)
+[Get Device Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-device-get)
 ```javascript
 packet.get_device("device_id", function(err, response){
     if(err)
@@ -60,7 +60,7 @@ packet.get_device("device_id", function(err, response){
 ```
 
 #### Update Device
-[Update Device Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-project-patch)
+[Update Device Documentation](https://www.packet.net/resources/docs/#page:devices,header:devices-device-patch)
 ```javascript
 packet.update_device("device_id", {
     "hostname": "my-updated-first-device"
