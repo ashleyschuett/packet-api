@@ -1,12 +1,12 @@
 var _ = require("lodash");
-var package = require([__dirname, "package"].join("/"));
+var pkg = require([__dirname, "package"].join("/"));
 
 function PacketAPI(options){
     this.options = {
         baseUrl: "https://api.packet.net",
         timeout: 10000,
         headers: {
-            "User-Agent": [package.name, package.version].join(" "),
+            "User-Agent": [pkg.name, pkg.version].join(" "),
             "X-Auth-Token": options.api_key
         },
         pool: {
@@ -15,7 +15,7 @@ function PacketAPI(options){
         json: true
     }
 
-    this.version = package.version;
+    this.version = pkg.version;
 
     var endpoints = [
         "devices",
