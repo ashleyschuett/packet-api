@@ -4,7 +4,7 @@ var pkg = require([__dirname, "package"].join("/"));
 function PacketAPI(options){
     this.options = {
         baseUrl: "https://api.packet.net",
-        timeout: 10000,
+        timeout: options.timeout || 20000,
         headers: {
             "User-Agent": [pkg.name, pkg.version].join(" "),
             "X-Auth-Token": options.api_key
