@@ -1,6 +1,6 @@
 {
   "name": "packet-api",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A packet.net API client implemented in nodejs",
   "main": "application.js",
   "scripts": {
