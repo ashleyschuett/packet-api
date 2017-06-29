@@ -19,6 +19,7 @@ function PacketAPI(options){
 
     var endpoints = [
         "devices",
+        "hardware_reservations",
         "projects",
         "ssh_keys"
     ]
